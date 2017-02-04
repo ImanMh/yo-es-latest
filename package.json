@@ -1,5 +1,5 @@
 {
-  "name": "yo-es6-webpack",
+  "name": "generator-es6-webpack",
   "version": "0.0.0",
   "description": "A Yoman generator for scafolding es6 environments based on webpack 2 and babel",
   "main": "main.js",
