@@ -1,0 +1,27 @@
+{
+  "name": "yo-es6-webpack",
+  "version": "0.0.0",
+  "description": "A Yoman generator for scafolding es6 environments based on webpack 2 and babel",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImanMh/yo-es6-webpack.git"
+  },
+  "keywords": [
+    "es6",
+    "webpack",
+    "babel",
+    "webpack",
+    "2",
+    "javascript"
+  ],
+  "author": "Iman Mohamadi <iman@jsdecorator.com> (http://jsdecorator.com)",
+  "license": " GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/ImanMh/yo-es6-webpack/issues"
+  },
+  "homepage": "https://github.com/ImanMh/yo-es6-webpack#readme"
+}
