@@ -16,7 +16,8 @@
     "babel",
     "webpack",
     "2",
-    "javascript"
+    "javascript",
+    "yeoman-generator"
   ],
   "author": "Iman Mohamadi <iman@jsdecorator.com> (http://jsdecorator.com)",
   "license": " GPL-2.0+",
