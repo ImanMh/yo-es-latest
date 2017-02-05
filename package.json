@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/ImanMh/yo-es6-webpack/issues"
   },
-  "homepage": "https://github.com/ImanMh/yo-es6-webpack#readme"
+  "homepage": "https://github.com/ImanMh/yo-es6-webpack#readme",
+  "dependencies": {
+    "yeoman-generator": "^1.1.0"
+  }
 }
