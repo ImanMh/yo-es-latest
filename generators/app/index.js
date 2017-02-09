@@ -19,8 +19,8 @@
 
     startCopy () {
         this.fs.copyTpl(
-          this.templatePath('test.js'),
-          this.destinationPath()
+          this.templatePath('.'),
+          this.destinationPath('')
         );
     }
 
