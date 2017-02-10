@@ -1,7 +1,7 @@
 {
-  "name": "generator-es6-webpack",
-  "version": "0.0.0",
-  "description": "A Yoman generator for scafolding es6 environments based on webpack 2 and babel",
+  "name": "generator-es-latest",
+  "version": "1.0.0",
+  "description": "A Yoman generator for scafolding latest version of Javascript [es6, es7] environments using babel",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,10 +12,8 @@
   },
   "keywords": [
     "es6",
-    "webpack",
+    "es7",
     "babel",
-    "webpack",
-    "2",
     "javascript",
     "yeoman-generator"
   ],
