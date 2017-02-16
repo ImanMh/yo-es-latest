@@ -17,24 +17,58 @@
         {
           type    : 'input',
           name    : 'projectName',
-          message : 'Your project name',
+          message : 'Project name',
           default : this.appname
         },
         {
           type    : 'input',
           name    : 'version',
-          message : 'Your project version',
+          message : 'Project version',
           default : '0.0.0'
+        },
+        {
+          type    : 'input',
+          name    : 'description',
+          message : 'Project description',
+          default : ''
+        },
+        {
+          type    : 'input',
+          name    : 'keywords',
+          message : 'Comma seperated keywords',
+          default : ''
+        },
+        {
+          type    : 'input',
+          name    : 'repoUrl',
+          message : 'Repositoy url',
+          default : ''
+        },
+        {
+          type    : 'input',
+          name    : 'homepage',
+          message : 'Project homepage',
+          default : ''
+        },
+        {
+          type    : 'input',
+          name    : 'author',
+          message : 'Author info',
+          default : ''
         }
       ]).then(function (answers) {
-        _this.log('app name', answers.name);
-        _this.log('cool feature', answers.cool);
+        _this.log('answers', JSON.stringify(answers));
         _this.fs.copyTpl(
           _this.templatePath('.'),
           _this.destinationPath(''),
           {
             projectName: answers.projectName,
-            version: answers.version
+            version: answers.version,
+            description: answers.description,
+            keywords: answers.keywords,
+            repoUrl: answers.repoUrl,
+            homepage: answers.homepage,
+            author: answers.author
           }
         );
       });
