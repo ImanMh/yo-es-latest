@@ -1,16 +1,8 @@
-# yo-es-latest
-A Yoman generator for scafolding es6 environments based on webpack and babel node
+# generator-es-latest
+A Yeoman generator for scaffolding es6 environments based on webpack and babel node
 
 ## installation
-If you don't have ```yoman``` installed, install it via ```npm install yo -g```. Then install this generator like:
-
-```
-npm install yo-es-latest
-```
+If you don't have `yeoman` installed, install it via `npm i -g yo` or `yarn global add yo` Then install this generator using `npm i -g generator-es-latest` or `yarn global add generator-es-latest`.
 
 ## usage
-Make a directory and cd into it. You can turn it into a es-latest project by using the following command:
-
-```
-yo es-latest
-```
+Make a directory and `cd` into it. You can turn it into a es-latest project by using `yo es-latest`
