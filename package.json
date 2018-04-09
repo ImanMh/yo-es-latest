@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/ImanMh/yo-es6-webpack#readme",
   "dependencies": {
+    "rollup": "^0.57.1",
     "yeoman-generator": "^1.1.0"
   }
 }
