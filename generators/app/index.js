@@ -2,6 +2,7 @@
   "use strict";
 
   var Generator = require('yeoman-generator');
+  var projectName = '';
 
   module.exports = class extends Generator {
     constructor(args, opts) {
@@ -19,6 +20,12 @@
           name    : 'projectName',
           message : 'Project name',
           default : this.appname
+        },
+        {
+          type    : 'input',
+          name    : 'packageName',
+          message : 'package name',
+          default : this.appname.toLowerCase()
         },
         {
           type    : 'input',
@@ -58,6 +65,7 @@
         }
       ]).then(function (answers) {
 
+        projectName = answers.projectName;
         _this.log('answers', JSON.stringify(answers, null, 4));
 
         _this.fs.copyTpl(
@@ -65,6 +73,7 @@
           _this.destinationPath('./' + answers.projectName),
           {
             projectName: answers.projectName,
+            packageName: answers.packageName.toLowerCase(),
             version: answers.version,
             description: answers.description,
             keywords: answers.keywords,
@@ -73,13 +82,12 @@
             author: answers.author
           }
         );
-
-        _this.spawnCommand(
-          "npm",
-          ["install"],
-          { cwd: _this.destinationPath('./' + answers.projectName)},
-        );
       });
+    }
+
+    install () {
+      process.chdir(this.destinationPath('./' + projectName));
+      this.npmInstall();
     }
 
   };
