@@ -5,6 +5,7 @@ const inputOptions = {
 const outputOptions = {
     format: 'umd',
     file: 'dist/main.js',
+    sourcemap: true,
 }
 
 module.exports = {
