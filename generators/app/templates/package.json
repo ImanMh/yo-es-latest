@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel",
-    "build": "babel src --out-dir dist",
+    "build": "node tools/build.js",
     "start": "npm run build && node ./dist/index.js",
     "watch": "npm run build && nodemon ./dist/index.js"
   },
@@ -28,6 +28,7 @@
     "eslint": "^3.10.2",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0",
+    "rollup": "^0.57.1",
     "nodemon": "^1.11.0"
   }
 }

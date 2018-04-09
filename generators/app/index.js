@@ -57,10 +57,12 @@
           default : ''
         }
       ]).then(function (answers) {
-        _this.log('answers', JSON.stringify(answers));
+
+        _this.log('answers', JSON.stringify(answers, null, 4));
+
         _this.fs.copyTpl(
           _this.templatePath('.'),
-          _this.destinationPath(''),
+          _this.destinationPath('./' + answers.projectName),
           {
             projectName: answers.projectName,
             version: answers.version,
@@ -70,6 +72,12 @@
             homepage: answers.homepage,
             author: answers.author
           }
+        );
+
+        _this.spawnCommand(
+          "npm",
+          ["install"],
+          { cwd: _this.destinationPath('./' + answers.projectName)},
         );
       });
     }
