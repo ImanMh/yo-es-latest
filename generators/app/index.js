@@ -80,7 +80,9 @@
             repoUrl: answers.repoUrl,
             homepage: answers.homepage,
             author: answers.author
-          }
+          },
+          {}, //template options
+          { globOptions: { dot: true } },
         );
       });
     }
