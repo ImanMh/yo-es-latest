@@ -1,8 +1,3 @@
-var a = 'a';
+import { a, b } from './x.js';
 
-var b = 'b';
-
-
-var c = 'c';
-
-console.log(a, b, c);
+console.log(a, JSON.stringify({ ...b }));
