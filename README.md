@@ -1,8 +1,9 @@
 # Generator-es-latest
-A Yeoman generator for scaffolding es6 environments based on webpack and babel node
+A Yeoman generator for scaffolding latest Javascript environments (ES2017/ES2016) using rollup and babel.
 
 ## Features
   * :zap: Fast and easy installation via Yeoman.
+  * :pizza: ES7/ES6 compatible.
   * :cyclone: Watchers for build and test.
   * :star2: Generates UMD style modules that are ready to publish in npm.
   * :crossed_flags: Both Nodejs and browser friendly output.
