@@ -25,7 +25,6 @@ async function build() {
       },
     ));
     watcher.on('event', event => {
-      console.log(event)
       const nowDateTime = new Date();
       const now = [nowDateTime.getHours(), nowDateTime.getMinutes(), nowDateTime.getSeconds()].join(':');
       if (event.code === 'BUNDLE_END') {
