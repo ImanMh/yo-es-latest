@@ -12,9 +12,24 @@ A Yeoman generator for scaffolding latest Javascript environments (ES2017/ES2016
   * :heavy_check_mark: Testing and assertion with mocha and chai with customizations. (next feature...)
   * :chart_with_downwards_trend: Bench mark tools included. (comming soon...)
 
-## Installation
-If you don't have yeoman installed, install it via `npm i -g yo` or `yarn global add yo`. 
-Then install this generator using `npm i -g generator-es-latest` or `yarn global add generator-es-latest`.
+### Install Yeoman
+If you don't have yeoman installed:
+
+```
+# install it via npm
+npm i -g yo
+
+# or yarn
+yarn global add yo
+```
+### Install generator-es-latest
+```
+# install it via npm
+npm i -g generator-es-latest
+
+# or yarn
+yarn global add generator-es-latest
+```
 
 ## Usage
 Run `yo es-latest`
