@@ -2,13 +2,13 @@
   "name": "<%= packageName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel",
     "build": "node tools/build.js",
-    "start": "npm run build && node ./dist/index.js",
-    "watch": "npm run build && nodemon ./dist/index.js"
+    "build:watch": "node tools/build.js --watch",
+    "start": "npm run build && node ./dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -27,11 +27,11 @@
     "@babel/core": "^7.0.0-beta.42",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
     "@babel/preset-env": "^7.0.0-beta.44",
+    "easy-argument-parser": "^1.0.2",
     "eslint": "^3.10.2",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0",
     "rollup": "^0.57.1",
-    "rollup-plugin-babel": "^4.0.0-beta.3",
-    "nodemon": "^1.11.0"
+    "rollup-plugin-babel": "^4.0.0-beta.3"
   }
 }

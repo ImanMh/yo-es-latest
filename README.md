@@ -6,4 +6,5 @@ If you don't have yeoman installed, install it via `npm i -g yo` or `yarn global
 Then install this generator using `npm i -g generator-es-latest` or `yarn global add generator-es-latest`.
 
 ## usage
-Make a directory and `cd` into it. You can turn it into a es-latest project by using `yo es-latest`
+Run `yo es-latest`
+write your code in `src` directory and run `npm run build`. Your build files will go under `dist`.

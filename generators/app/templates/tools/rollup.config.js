@@ -15,7 +15,12 @@ const outputOptions = {
     sourcemap: true,
 }
 
+const watchOptions = {
+    include: '../src/**',
+};
+
 module.exports = {
   input: inputOptions,
   output: outputOptions,
+  watch: watchOptions,
 };
