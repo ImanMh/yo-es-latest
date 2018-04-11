@@ -4,4 +4,6 @@ export const b = {
     y: 2,
 };
 
+export const arraySum = (arr) => arr.reduce((acc, item) => acc + item, 0);
+
 export const c = 100;

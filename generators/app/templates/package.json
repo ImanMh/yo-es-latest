@@ -4,7 +4,7 @@
   "description": "<%= description %>",
   "main": "dist/<%= packageName %>.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "babel": "babel",
     "build": "node tools/build.js",
     "build:watch": "node tools/build.js --watch",
@@ -27,10 +27,14 @@
     "@babel/core": "^7.0.0-beta.42",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
     "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.4.3",
     "easy-argument-parser": "^1.0.2",
     "eslint": "^3.10.2",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0",
+    "jest": "^22.4.3",
+    "regenerator-runtime": "^0.11.1",
     "rollup": "^0.57.1",
     "rollup-plugin-babel": "^4.0.0-beta.3"
   }
