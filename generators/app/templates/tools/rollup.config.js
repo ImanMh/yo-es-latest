@@ -11,7 +11,7 @@ const inputOptions = {
 
 const outputOptions = {
     format: 'umd',
-    file: 'dist/main.js',
+    file: 'dist/<%= packageName %>.js',
     sourcemap: true,
 }
 

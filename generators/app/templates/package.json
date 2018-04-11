@@ -2,13 +2,13 @@
   "name": "<%= packageName %>",
   "version": "<%= version %>",
   "description": "<%= description %>",
-  "main": "dist/main.js",
+  "main": "dist/<%= packageName %>.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel": "babel",
     "build": "node tools/build.js",
     "build:watch": "node tools/build.js --watch",
-    "start": "npm run build && node ./dist/main.js"
+    "start": "npm run build && node ./dist/<%= packageName %>.js"
   },
   "repository": {
     "type": "git",
