@@ -9,8 +9,8 @@ A Yeoman generator for scaffolding latest Javascript environments (ES2017/ES2016
   * :crossed_flags: Both **Nodejs and browser** friendly output.
   * :baby_chick: **0%** CSS, SASS, Less or any other style or html related stuff configuration.
   * :electric_plug: File base configuration for easier customizations (.babelrc, .eslint, .editorconfig and etc).
-  * :heavy_check_mark: **Testing and assertion** with mocha and chai with customizations. (next feature...)
-  * :chart_with_downwards_trend: **Bench mark** tools included. (comming soon...)
+  * :heavy_check_mark: **Testing and assertion** with mocha and chai with customizations.
+  * :chart_with_downwards_trend: **Bench mark** tools included. (next feature...)
 
 ### Install Yeoman
 If you don't have yeoman installed:
