@@ -5,11 +5,11 @@
   var projectName = '';
 
   module.exports = class extends Generator {
+
     constructor(args, opts) {
       super(args, opts);
       this.option('babel');
     }
-
 
     prompting () {
       console.log('Are you ready to turn this directory into a es6 environment?');
@@ -82,7 +82,7 @@
             author: answers.author
           },
           {}, //template options
-          { globOptions: { dot: true } },
+          { globOptions: { dot: true } }
         );
       });
     }
@@ -91,6 +91,6 @@
       process.chdir(this.destinationPath('./' + projectName));
       this.npmInstall();
     }
-
   };
+
 }());
