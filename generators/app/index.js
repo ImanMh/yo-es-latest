@@ -25,6 +25,11 @@
           type    : 'input',
           name    : 'packageName',
           message : 'package name',
+          validate: function (i) {
+             return /^[a-z0-9]{1,214}$/.test(i)
+             ? true
+             : 'invalid package name see https://docs.npmjs.com/files/package.json#name for details.'
+          },
           default : this.appname.toLowerCase()
         },
         {
@@ -61,7 +66,7 @@
           type    : 'input',
           name    : 'author',
           message : 'Author info',
-          default : ''
+          default : 'Your Name <yoru@email.com> (http://yourWestie/)'
         }
       ]).then(function (answers) {
 
