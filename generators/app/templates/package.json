@@ -4,7 +4,7 @@
   "description": "<%= description %>",
   "main": "dist/<%= packageName %>.js",
   "scripts": {
-    "test": "jest --config .jest.config.js",
+    "test": "jest --config ./jest.config.js",
     "babel": "babel",
     "build": "node tools/build.js",
     "build:watch": "node tools/build.js --watch",
