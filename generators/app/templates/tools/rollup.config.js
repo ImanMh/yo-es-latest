@@ -1,22 +1,23 @@
 var babel = require('rollup-plugin-babel');
 
 const inputOptions = {
-    input: './src/index.js',
-    plugins: [
-        babel({
-          exclude: 'node_modules/**'
-        })
-    ]
+  input: './src/index.js',
+  plugins: [
+    babel({
+      exclude: 'node_modules/**'
+    })
+  ]
 };
 
 const outputOptions = {
-    format: 'umd',
-    file: 'dist/<%= packageName %>.js',
-    sourcemap: true,
+  name: '<%= packageName %>'
+  format: 'umd',
+  file: 'dist/<%= packageName %>.js',
+  sourcemap: true,
 }
 
 const watchOptions = {
-    include: '../src/**',
+  include: '../src/**',
 };
 
 module.exports = {
