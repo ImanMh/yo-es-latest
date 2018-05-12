@@ -4,13 +4,13 @@ const inputOptions = {
   input: './src/index.js',
   plugins: [
     babel({
-      exclude: 'node_modules/**'
-    })
-  ]
+      exclude: 'node_modules/**',
+    }),
+  ],
 };
 
 const outputOptions = {
-  name: '<%= packageName %>'
+  name: '<%= packageName %>',
   format: 'umd',
   file: 'dist/<%= packageName %>.js',
   sourcemap: true,
